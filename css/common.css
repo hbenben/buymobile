@@ -1,0 +1,45 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.mmm_header {
+  height: 55px;
+  padding-top: 5px;
+  background-color: #ff841d;
+  position: relative;
+}
+.mmm_header .logo {
+  float: left;
+  padding: 10px 10px;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+.mmm_header .logo img {
+  display: block;
+  width: 100%;
+}
+.mmm_header .appDL {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  width: 42px;
+  height: 42px;
+}
+.mmm_header .appDL img {
+  display: block;
+  width: 100%;
+}
+.mmm_footer {
+  text-align: center;
+}
+.mmm_footer .mmm_download {
+  font-size: 12px;
+}
+.mmm_footer .mmm_copyright {
+  font-size: 10px;
+}

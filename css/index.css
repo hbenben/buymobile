@@ -1,0 +1,281 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+.clearfix::before {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+}
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.mmm_header {
+  height: 55px;
+  padding-top: 5px;
+  background-color: #ff841d;
+  position: relative;
+}
+.mmm_header .logo {
+  float: left;
+  padding: 10px 10px;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+.mmm_header .logo img {
+  display: block;
+  width: 100%;
+}
+.mmm_header .appDL {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  width: 42px;
+  height: 42px;
+}
+.mmm_header .appDL img {
+  display: block;
+  width: 100%;
+}
+.mmm_content {
+  position: relative;
+  flex: 1;
+}
+.mmm_content .search {
+  height: 40px;
+  margin-bottom: 20px;
+}
+.mmm_content .search .searbox {
+  padding: 10px;
+  display: flex;
+  background-color: #fff;
+}
+.mmm_content .search .searbox input {
+  margin: 0;
+  height: 30px;
+}
+.mmm_content .search .searbox input:nth-of-type(1) {
+  flex: 8;
+  border-radius: 18px;
+  background-color: #f1efef;
+}
+.mmm_content .search .searbox input:nth-of-type(2) {
+  flex: 2;
+  padding: 2px;
+  margin-left: 10px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff841d;
+}
+.mmm_content .mmy_nav {
+  background-color: #fff;
+  width: 100%;
+}
+.mmm_content .mmy_nav ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.mmm_content .mmy_nav ul li {
+  width: 25%;
+  padding: 10px 0;
+}
+.mmm_content .mmy_nav ul li img {
+  margin: 0 auto;
+  display: block;
+  width: 40%;
+}
+.mmm_content .mmy_nav ul li p {
+  text-align: center;
+}
+.mmm_content .mmm_proList {
+  margin-top: 10px;
+}
+.mmm_content .mmm_proList .proLiTitle {
+  height: 30px;
+  background-color: #ff9000;
+}
+.mmm_content .mmm_proList .proLiTitle h3 {
+  float: left;
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+  margin-left: 10px;
+}
+.mmm_content .mmm_proList .proLiTitle div {
+  width: 30px;
+  float: right;
+}
+.mmm_content .mmm_proList .proLiTitle div img {
+  display: block;
+  width: 100%;
+}
+.mmm_content .mmm_proList .productList {
+  padding-bottom: 4px;
+  background-color: #fff;
+}
+.mmm_content .mmm_proList .productList .probox {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.mmm_content .mmm_proList .productList .probox a {
+  display: flex;
+}
+.mmm_content .mmm_proList .productList .probox a .pro_img {
+  flex: 1;
+  padding: 20px;
+}
+.mmm_content .mmm_proList .productList .probox a .pro_img img {
+  display: block;
+  width: 80%;
+}
+.mmm_content .mmm_proList .productList .probox a .pro_about {
+  flex: 6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.mmm_content .mmm_proList .productList .probox a .pro_about .productName {
+  color: #333;
+}
+.mmm_content .mmm_proList .productList .probox a .pro_about .productPinkage {
+  color: #f00;
+}
+.mmm_content .mmm_proList .productList .probox a .pro_about div {
+  color: #666;
+}
+.mmm_content .mmm_proList .productList .probox a .pro_about > span {
+  flex: 1;
+  font-size: 13px;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
+.mmm_content .mmm_proList .moreInfo {
+  display: block;
+  color: #23527c;
+  margin: 10px auto;
+  width: 96%;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.mmm_footer {
+  height: 60px;
+  text-align: center;
+}
+.mmm_footer .mui-row > div {
+  border: 1px solid #ccc;
+}
+.mmm_footer .mmm_download {
+  padding: 2px 0;
+  font-size: 13px;
+}
+.mmm_footer .mmm_copyright {
+  font-size: 12px;
+}
+.toggle .mmm_hid {
+  display: none;
+}

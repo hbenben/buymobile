@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/brandTitle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="layout">
+        <!-- 头部结构开始 -->
+        <div class="mmm_header">
+            <div class="logo">
+                <img src="../images/header_logo.png" alt="">
+            </div>
+            <div class="appDL">
+                <img src="../images/header_app.png" alt="">
+            </div>
+        </div>
+        <!-- 头部结构结束 -->
+
+        <!-- 搜索栏结构开始 -->
+        <div class="brand_search">
+            <!-- 在两个input外面套一个form表单 一是 语义角度 二是布局的角度 -->
+            <form action="#">
+                <!-- type=search 当点击搜索框的时候输入法右下角 变成搜索 -->
+                <input type="search" name="" class="user_search" placeholder="请输入要比价的商品">
+                <input type="submit" class="" value="搜索">
+            </form>
+        </div>
+        <!-- 搜索栏结构结束 -->
+
+        <!-- 分类与标题结构开始 -->
+        <section class="brand_category">
+            <!-- 分类结构 -->
+            <div class="brand_category_title">
+                <ul class="brand_crumb">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">全部分类</a></li>
+                    <li>品牌大全</li>
+                </ul>
+            </div>
+            <!-- 标题结构 -->
+            <div class="brand_hot">热门品牌排行</div>
+            <div class="row clearfix brand-title">
+                >
+            </div>
+        </section>
+        <!-- 分类与标题结构结束 -->
+
+        <!-- 底部结构开始-->
+        <footer class="footer">
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="#">登录</a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#">注册</a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+                </div>
+            </div>
+            <p> <a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>m.manmanbuy.com </p>
+        </footer>
+        <!-- 底部结构结束-->
+
+        <!-- 品牌名称渲染 -->
+        <script type="text/html" id="brandTitleTmp">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+               {{each result as value i}}
+                 <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                                 <!-- data-toggle="collapse" 是功能组件的开关 有这个属性表示开启 没有表示关闭 -->
+                                <a data-parent="#accordion" href="brand.html?brandtitleid={{value.brandTitleId}}" aria-expanded="true" aria-controls="collapseOne" data-brandtitleid="{{value.brandTitleId}}">
+                                {{value.brandTitle}}                       
+                                </a>
+                            </h4>
+                    </div>
+                </div>
+               {{/each}}
+            </div>
+        </script>
+        
+
+    </div>
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/brandtitle.js"></script>
+    
+</body>
+
+</html>

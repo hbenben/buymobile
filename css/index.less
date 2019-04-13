@@ -1,0 +1,190 @@
+@import './reset';
+@import './common';
+
+
+
+.mmm_content {
+  position: relative;
+  flex: 1;
+
+  .search {
+    height: 40px;
+    margin-bottom: 20px;
+
+    .searbox {
+      padding: 10px;
+      display: flex;
+      background-color: #fff;
+
+      input {
+        margin: 0;
+        height: 30px;
+      }
+
+      input:nth-of-type(1) {
+        flex: 8;
+        border-radius: 18px;
+        background-color: rgb(241, 239, 239);
+      }
+
+      input:nth-of-type(2) {
+        flex: 2;
+        padding: 2px;
+        margin-left: 10px;
+        border-radius: 20px;
+        text-align: center;
+        color: #fff;
+        background-color: #ff841d;
+      }
+
+
+    }
+  }
+
+  .mmy_nav {
+    background-color: #fff;
+    width: 100%;
+
+    ul {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+
+      li {
+        width: 25%;
+        padding: 10px 0;
+
+        img {
+          margin: 0 auto;
+          display: block;
+          width: 40%;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+
+  }
+
+  .mmm_proList {
+    margin-top: 10px;
+
+    .proLiTitle {
+      height: 30px;
+      background-color: #ff9000;
+
+      h3 {
+        float: left;
+        font-size: 18px;
+        color: #fff;
+        line-height: 30px;
+        margin-left: 10px;
+      }
+
+      div {
+        // padding-top: 5px;
+        width: 30px;
+        float: right;
+
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+
+    .productList {
+      padding-bottom: 4px;
+      background-color: #fff;
+
+      .probox {
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+
+        a {
+          display: flex;
+
+          .pro_img {
+            flex: 1;
+            padding: 20px;
+
+            img {
+              display: block;
+              width: 80%;
+            }
+          }
+
+          .pro_about {
+            flex: 6;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .productName {
+              color: #333;
+            }
+
+            .productPinkage {
+              color: #f00;
+            }
+
+            div {
+              color: #666;
+            }
+
+            >span {
+              flex: 1;
+              font-size: 13px;
+              position: absolute;
+              right: 0;
+              bottom: 0px;
+            }
+          }
+        }
+      }
+
+    }
+
+    .moreInfo {
+      display: block;
+      color: #23527c;
+      margin: 10px auto;
+      width: 96%;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 8px;
+      font-size: 16px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+  }
+
+}
+
+.mmm_footer {
+  height: 60px;
+  text-align: center;
+
+  .mui-row {
+    >div {
+      border: 1px solid #ccc;
+    }
+  }
+
+  .mmm_download {
+    padding: 2px 0;
+    font-size: 13px;
+  }
+
+  .mmm_copyright {
+    font-size: 12px;
+  }
+}
+
+.toggle .mmm_hid {
+  display: none;
+}

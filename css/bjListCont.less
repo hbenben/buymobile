@@ -1,0 +1,73 @@
+@import '_reset.less';
+@import 'common.less';
+
+.layout {
+  display: flex;
+
+  // 搜索框输入栏
+  .bj_search form {
+    height: 50px;
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+
+    input:nth-of-type(1) {
+      height: 30px;
+      flex: 3;
+      margin-right: 10px;
+      background-color: #eee;
+      border-radius: 15px;
+    }
+
+    input:nth-of-type(2) {
+      width: 64px;
+      height: 30px;
+      border-radius: 15px;
+    }
+  }
+
+  // 中间的内容分类列表，区域滚动
+  .mmm_content {
+
+    .mui-scroll-wrapper {
+      top: 100px;
+        .produce_wrapper{
+          padding: 6px;
+          background-color: #fff;
+          >a{
+            margin-top: 6px;
+            display: flex;
+            .pro_left{
+              flex: 1;
+            }
+            .pro_right {
+              flex: 4;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 10px;
+              padding-top: 20px;
+              // align-items: center;
+              .pro_name{
+                color: #000;
+                flex: 1;
+              }
+              .pro_price{
+                color: red;
+                flex: 1;
+              }
+              .pro_comment{
+                flex: 1;
+                color: #666;
+                font-size: 12PX;
+              }
+            }
+          }
+        }
+      
+    }
+  }
+
+  // 底部样式
+
+}

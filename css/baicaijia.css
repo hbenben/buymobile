@@ -1,0 +1,240 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+.clearfix::before {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+}
+.bcj_layout {
+  min-width: 582px;
+  position: relative;
+  background-color: #ccc;
+  overflow: hidden;
+  width: 100vw;
+}
+.bcj_layout #bcj_header {
+  background-color: #f4483e;
+}
+.bcj_layout #bcj_header > .mui-title {
+  font-size: 20px;
+  color: #fff;
+}
+.bcj_layout #bcj_header > .mui-pull-left {
+  color: #fff;
+}
+.bcj_layout #bcj_header > .header_download {
+  position: absolute;
+  top: -18px;
+  right: 6px;
+  font-size: 35px;
+  color: #fff;
+}
+.bcj_layout #bcj_header > span {
+  position: absolute;
+  font-size: 10px;
+  top: 28px;
+  right: 4px;
+  color: #fff;
+}
+.bcj_layout .bcj_content {
+  padding-top: 50px;
+  background-color: #fff;
+}
+.bcj_layout .bcj_content .nav_box {
+  width: 100%;
+  padding-bottom: 2px;
+  overflow: hidden;
+}
+.bcj_layout .bcj_content .gorupLists {
+  width: 700px;
+  height: 40px;
+  overflow: hidden;
+}
+.bcj_layout .bcj_content .gorupLists li {
+  font-size: 14px;
+  padding: 0 5px;
+  float: left;
+}
+.bcj_layout .bcj_content .bcj_nav {
+  color: #000;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bcj_layout .bcj_content .bcj_nav:active {
+  border-bottom: 2px solid red;
+}
+.bcj_layout .bcj_content .bcj_nav:hover {
+  border-bottom: 2px solid red;
+}
+.bcj_layout .bcj_content .goodsList {
+  padding-top: 10px;
+  background-color: #fff;
+  width: 100%;
+  border-top: 2px solid red;
+}
+.bcj_layout .bcj_content .goodsList li {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.bcj_layout .bcj_content .goodsList li img {
+  width: 100%;
+}
+.bcj_layout .bcj_content .goodsList li:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.bcj_layout .bcj_content .goodsList li .goods_left {
+  flex: 2;
+  padding: 10px;
+}
+.bcj_layout .bcj_content .goodsList li .goods_right {
+  position: relative;
+  margin: auto 0;
+  flex: 4;
+}
+.bcj_layout .bcj_content .goodsList li .goods_right .goods_price {
+  padding: 10px 0;
+  color: red;
+}
+.bcj_layout .bcj_content .goodsList li .goods_right .goods_price > span {
+  font-size: 20px;
+}
+.bcj_layout .bcj_content .goodsList li .goods_right .goods_price > del {
+  color: #ccc;
+  padding-left: 10px;
+}
+.bcj_layout .bcj_content .goodsList li .goods_right .goods_tiao {
+  padding: 10px 0;
+  color: red;
+}
+.bcj_layout .bcj_content .goodsList li .goods_right > a {
+  border: 1px dashed #f00;
+  border-left: none;
+  color: #f00;
+  font-size: 13px;
+}
+.bcj_layout .bcj_content .goodsList li .goods_right .goods_btn {
+  position: absolute;
+  right: 20px;
+  bottom: -7px;
+}
+.bcj_layout #footer {
+  background-color: #fff;
+}
+.bcj_layout #footer > .row > div {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+}
+.bcj_layout #footer > .row > div > a > img {
+  width: 15px;
+  height: 15px;
+}
+.bcj_layout #footer > .row > div + div {
+  border-left: 0;
+}
+.bcj_layout #footer > p {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 12px;
+}
+.bcj_layout #footer > p > a:first-child {
+  color: red;
+}

@@ -1,0 +1,170 @@
+@import './reset.less';
+
+.bcj_layout{
+    min-width: 582px;
+    // max-width: 700px;
+    position: relative;
+    background-color: #ccc;
+    overflow: hidden;
+    width: 100vw;
+
+
+    #bcj_header{
+        background-color: #f4483e;
+        
+        >.mui-title{
+            font-size: 20px;
+            color: #fff;
+        }
+        >.mui-pull-left{
+            color: #fff;
+        }
+        >.header_download{
+            position: absolute;
+            top:-18px;
+            right:6px;
+            font-size: 35px;
+            
+            color: #fff;
+        }
+        >span{
+            position: absolute;
+            font-size: 10px;
+            top: 28px;
+            right: 4px;
+            color: #fff;
+        }
+    }
+    .bcj_content{
+        padding-top: 50px;
+        background-color: #fff;
+        .nav_box{
+            // width:1000px;
+            width: 100%;
+            padding-bottom:2px;
+            overflow: hidden;
+            
+        }
+        .gorupLists{
+            // display: flex;
+            width: 700px;
+            height: 40px;
+            overflow: hidden;
+            li{
+                font-size: 14px;
+                padding:0 5px;
+                float: left;
+            }
+        }
+        .bcj_nav{
+            color: #000;
+            flex: 1;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            &:active{
+               border-bottom: 2px solid red;
+
+            }
+            &:hover{
+                border-bottom: 2px solid red;
+                
+            }
+        }
+
+
+        .goodsList{
+            // position: relative;
+            padding-top: 10px;
+            background-color: #fff;
+            width: 100%;
+            border-top:2px solid red;
+            li{
+                width: 100%;
+                display: flex;
+                margin-bottom: 20px;
+                
+                img{
+                    width: 100%;
+                }
+            &:nth-last-of-type(1){
+                 margin-bottom: 0;
+                }
+            .goods_left{
+                flex: 2;
+                padding: 10px;
+
+            }
+            .goods_right{
+                position: relative;
+                margin: auto 0;
+                flex: 4;
+                .goods_price{
+                    padding: 10px 0;
+                    color:red; 
+                    >span{
+                        font-size: 20px;
+                    }
+                    >del{
+                        color: #ccc;
+                        padding-left: 10px;
+                    
+                    }
+                }
+                .goods_tiao{
+                    padding: 10px 0;
+                    color: red;
+                }
+                >a{
+                    // padding: 5px;
+                    border:1px dashed #f00;
+                    border-left: none;
+                    color: #f00;
+                    font-size: 13px;
+
+                }
+                .goods_btn{
+                    // width: 20px;
+                    // height: 20px;
+                    position: absolute;
+                    right: 20px;
+                    bottom: -7px;
+                }
+
+
+              }   
+            }
+        }
+    }
+    #footer {
+        background-color: #fff;
+        >.row {
+            >div {
+                float: left;
+                width: 33.33%;
+                text-align: center;
+                border: 1px solid #ccc;
+                height: 30px;
+                line-height: 30px;
+                >a {
+                    >img {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+            >div+div {
+                border-left: 0;
+            }
+        }
+        >p {
+            margin: 5px 0;
+            text-align: center;
+            font-size: 12px;
+            >a:first-child {
+                color: red;
+            }
+        }
+    }
+
+}

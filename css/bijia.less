@@ -1,0 +1,48 @@
+@import '_reset.less';
+@import 'common.less';
+
+.layout {
+  display: flex;
+
+  // 搜索框输入栏
+  .bj_search form {
+    height: 50px;
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+
+    input:nth-of-type(1) {
+      height: 30px;
+      flex: 3;
+      margin-right: 10px;
+      background-color: #eee;
+      border-radius: 15px;
+    }
+
+    input:nth-of-type(2) {
+      width: 64px;
+      height: 30px;
+      border-radius: 15px;
+    }
+  }
+
+  // 中间的内容分类列表，区域滚动
+  .mui-scroll-wrapper {
+    top: 110px;
+    // bottom: 30px;
+
+    .mui-row {
+      .mui-col-xs-4 {
+        border: 1px solid #ccc;
+        text-align: center;
+        margin-left: -1px;
+        font-size: 13px;
+        a{
+          color: #333;
+        }
+      }
+    }
+  }
+  // 底部样式
+ 
+}

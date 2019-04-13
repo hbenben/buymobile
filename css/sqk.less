@@ -1,0 +1,91 @@
+@import 'reset.less';
+@import 'common.less';
+
+.layout {
+
+  // 头部样式
+  .sqk_header {
+    height: 50px;
+    background-color: #ff841d;
+
+    h3 {
+      padding: 10px;
+    }
+  } 
+
+  .mmm_content {
+
+    .mui-scroll-wrapper {
+      top: 50px;
+
+      // 中间的商品列表
+      .sqk_product_list {
+        li {
+          a {
+            padding: 10px;
+            display: flex;
+            background-color: #fff;
+            margin-bottom: 6px;
+
+            //左边的图片
+            .pro_list_left {
+              flex: 1;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            // 右边的内容
+            .pro_list_right {
+              flex: 3;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+
+              .pro_title {
+                flex: 1;
+                color: #000;
+              }
+
+              .pro_price {
+                flex: 1;
+                color: #e92322;
+                font-size: 14px;
+              }
+
+              .pro_from {
+                flex: 1;
+                font-size: 12px;
+                color: #666;
+
+                .pro_comment {
+                  float: right;
+                  color: #666;
+                  font-size: 12px;
+
+                  .mui-icon {
+                    font-size: 14px;
+                  }
+                }
+              }
+
+            }
+          }
+
+        }
+
+        // 分页器
+        .mui-pager {
+          li {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+}

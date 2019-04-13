@@ -1,0 +1,55 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  // margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mmm_header {
+  height: 55px;
+  padding-top: 5px;
+  background-color: #ff841d;
+  position: relative;
+
+  .logo {
+    float: left;
+    padding: 10px 10px;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .appDL {
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    width: 42px;
+    height: 42px;
+
+    // background-color: #f00;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+//设置底部样式
+.mmm_footer {
+  text-align: center;
+
+  .mmm_download {
+    font-size: 12px;
+  }
+
+  .mmm_copyright {
+    font-size: 10px;
+  }
+}

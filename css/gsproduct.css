@@ -1,0 +1,237 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.mmm_header {
+  height: 55px;
+  padding-top: 5px;
+  background-color: #ff841d;
+  position: relative;
+}
+.mmm_header .logo {
+  float: left;
+  padding: 10px 10px;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+.mmm_header .logo img {
+  display: block;
+  width: 100%;
+}
+.mmm_header .appDL {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  width: 42px;
+  height: 42px;
+}
+.mmm_header .appDL img {
+  display: block;
+  width: 100%;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+.clearfix::before {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+}
+.gsPro_Header {
+  line-height: 45px;
+  font-size: 20px;
+  height: 45px;
+  padding-left: 20px;
+  background-color: #ff841d;
+}
+.gsPro_content {
+  position: relative;
+  flex: 1;
+}
+.gsPro_content .hd {
+  width: 100%;
+  position: relative;
+}
+.gsPro_content .hd .filter {
+  padding: 4px;
+}
+.gsPro_content .hd .filter ul {
+  display: flex;
+}
+.gsPro_content .hd .filter ul li {
+  flex: 1;
+  padding: 5px 0;
+  text-align: center;
+  border: 1px solid #ff841d;
+}
+.gsPro_content .hd .filter ul li.active {
+  background-color: #666;
+}
+.gsPro_content .hd .filter ul li.active a {
+  color: #fff;
+}
+.gsPro_content .hd .filter ul li a {
+  color: #666;
+}
+.gsPro_content .hd .popbox ul li {
+  padding: 10px 20px;
+}
+.gsPro_content .hd .popbox ul li a {
+  color: #666;
+}
+.gsPro_content .good_list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gsPro_content .good_list .goods_box {
+  background-color: #fff;
+  width: 46%;
+  margin: 5px 0;
+  padding: 10px;
+}
+.gsPro_content .good_list .goods_box a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gsPro_content .good_list .goods_box a img {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+}
+.gsPro_content .good_list .goods_box a div {
+  display: flex;
+  height: 30px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.gsPro_content .good_list .goods_box a div div:nth-of-type(1) {
+  color: #f00;
+}
+.gsPro_content .good_list .goods_box a div div {
+  line-height: 30px;
+  display: block;
+}
+.gsPro_content .good_list .goods_box:nth-of-type(even) {
+  margin-left: 10px;
+}
+.mmm_hid {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.mmm_hid .popsort {
+  display: none;
+}
+.mmm_hid .popcat {
+  display: none;
+}
+.mmm_hid .popprice {
+  display: none;
+}
+.mmm_hid .active {
+  display: block;
+  z-index: 998;
+}
